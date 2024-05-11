@@ -1,8 +1,8 @@
 ## Homepage
-title = "Hinode"
+title = "MPE Bouwtechniek"
 titleSeparator = "-"
-titleAddition = "Clean Blog Theme"
-description = "Hinode is a clean blog theme for your Hugo site based on Bootstrap 5."
+titleAddition = "Welcome"
+description = ""
 
 ## Open Graph
 images = ["logo.png"]

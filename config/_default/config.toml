@@ -70,3 +70,9 @@ DefaultContentLanguageInSubdir = false
   [[module.mounts]]
     source = "node_modules/flexsearch"
     target = "assets/js/vendor/flexsearch"
+
+[params.slider]
+  images = [
+    { src = "/img/hero-slide-1.jpeg", alt = "Hero Slide 1" },
+    { src = "/img/mpe-logo.svg", alt = "Image 2" }
+]

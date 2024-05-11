@@ -13,17 +13,17 @@ weight = 1
   pageRef = "/services/"
   weight = 20
 
-[[main]]
-  parent = "Services"
-  name = "Renovations"
-  pageRef = "/services/#renovations"
-  weight = 21
+     [[main]]
+      parent = "Services"
+      name = "Renovations"
+      url = "/services/renovations/"
+      weight = 21
 
-[[main]]
-  parent = "Services"
-  name = "Extensions"
-  pageRef = "/services/#extensions"
-  weight = 22
+     [[main]]
+      parent = "Services"
+      name = "Extensions"
+      url = "/services/extensions/"
+      weight = 22
 
 [[main]]
   name = "Projects"
