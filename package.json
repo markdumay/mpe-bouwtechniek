@@ -1,71 +1,69 @@
 {
-  "name": "@markdumay/hugo-theme-hinode",
-  "version": "0.7.9",
+  "name": "@gethinode/template",
+  "version": "0.13.0",
   "description": "Hinode is a clean blog theme for Hugo, an open-source static site generator",
   "main": "index.js",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
   "scripts": {
-    "init": "shx rm -rf .git && git init -b main",
-    "create": "exec-bin node_modules/.bin/hugo/hugo new",
-    "prestart": "npm run clean",
-    "start": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender",
-    "prod": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender -e production",
-    "prebuild": "npm run clean",
-    "build": "exec-bin node_modules/.bin/hugo/hugo --gc --minify",
-    "build:debug": "exec-bin node_modules/.bin/hugo/hugo -e debug --debug",
+    "prestart": "npm run -s mod:vendor",
+    "start": "hugo server --bind=0.0.0.0 --disableFastRender --printI18nWarnings",
+    "start:prod": "npm run -s prestart  && hugo server --bind=0.0.0.0 --disableFastRender --printI18nWarnings -e production",
+    "prebuild": "npm run clean:public && npm run -s mod:vendor",
+    "build": "hugo --gc --minify",
+    "build:cache": "npm run -s prebuild && hugo config | grep cachedir && hugo --gc --minify -e ci",
+    "build:debug": "hugo -e debug --debug",
     "build:preview": "npm run build -D -F",
-    "clean": "shx rm -rf public resources",
-    "clean:install": "shx rm -rf package-lock.json node_modules ",
-    "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",
-    "lint:scripts": "eslint assets/js",
-    "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
+    "clean:public": "rimraf public",
+    "clean:install": "rimraf package-lock.json node_modules",
+    "lint": "npm-run-all lint:**",
+    "lint:scripts": "eslint assets/js --no-error-on-unmatched-pattern",
+    "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\" --allow-empty-input",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
-    "lint:markdown-fix": "markdownlint-cli2-fix \"*.md\" \"content/**/*.md\"",
-    "server": "exec-bin node_modules/.bin/hugo/hugo server",
+    "mod:clean": "hugo mod clean",
+    "mod:update": "rimraf _vendor && hugo mod get -u ./... && hugo mod get -u && npm run -s mod:vendor && npm run -s mod:tidy",
+    "mod:tidy": "hugo mod tidy",
+    "mod:vendor": "rimraf _vendor && hugo mod vendor",
     "test": "npm run -s lint",
-    "env": "env",
+    "env": "hugo env",
     "precheck": "npm version",
-    "check": "exec-bin node_modules/.bin/hugo/hugo version",
-    "copy:fonts": "shx cp ./node_modules/@fortawesome/fontawesome-free/webfonts/* ./static/fonts/",
-    "create:syntax": "exec-bin node_modules/.bin/hugo/hugo gen chromastyles --style=monokailight > ./assets/scss/components/_syntax.scss",
-    "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo",
-    "upgrade": "npx npm-check-updates -u",
-    "version": "auto-changelog -p && git add CHANGELOG.md"
+    "check": "hugo version",
+    "upgrade": "npx npm-check-updates -u && npm run -s mod:update"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/markdumay/hugo-theme-hinode.git"
+    "url": "git+https://github.com/gethinode/template.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/markdumay/hugo-theme-hinode/issues"
+    "url": "https://github.com/gethinode/hinode/issues"
   },
-  "homepage": "https://github.com/markdumay/hugo-theme-hinode#readme",
+  "homepage": "https://gethinode.com",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.1",
-    "@fullhuman/postcss-purgecss": "^5.0.0",
-    "autoprefixer": "^10.4.13",
-    "bootstrap": "^5.2.3",
-    "eslint": "^8.31.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.6.1",
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "@gethinode/netlify-plugin-dartsass": "^0.3.0",
+    "@netlify/plugin-lighthouse": "^6.0.0",
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.1",
+    "cssnano-preset-advanced": "^7.0.1",
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.0.0",
     "eslint-plugin-promise": "^6.1.1",
-    "exec-bin": "^1.0.0",
-    "flexsearch": "^0.7.31",
-    "hugo-installer": "^4.0.1",
-    "markdownlint-cli2": "^0.6.0",
-    "postcss-cli": "^10.1.0",
+    "hugo-bin": "^0.122.8",
+    "markdownlint-cli2": "^0.13.0",
+    "netlify-plugin-hugo-cache-resources": "^0.2.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.0",
     "purgecss-whitelister": "^2.4.0",
-    "shx": "^0.3.4",
-    "stylelint": "^14.16.1",
-    "stylelint-config-standard-scss": "^6.1.0"
+    "rimraf": "^5.0.7",
+    "stylelint": "^16.5.0",
+    "stylelint-config-standard-scss": "^13.1.0"
   },
-  "otherDependencies": {
-    "hugo": "0.109.0"
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
+  "hugo-bin": {
+    "buildTags": "extended"
   }
 }

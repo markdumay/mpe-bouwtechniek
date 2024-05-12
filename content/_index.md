@@ -1,13 +1,18 @@
 ---
-title: "Welcome to MPE Bouwtechniek!"
+title: Welcome to MPE Bouwtechniek!
 description: "Welcome to MPE Bouwtechniek!"
-date: "2024-05-02"
-showComments: false
+thumbnail:
+    url: /img/sunrise.jpg
+    author: Harris Vo
+    authorURL: https://unsplash.com/@hoanvokim
+    origin: https://unsplash.com/photos/ZX6BPboJrYk
+    originName: Unsplash
+actions:
+  get-started:
+    url: "https://gethinode.com/docs"
+    title: "Get started"
+    icon: "fas book-open"
 ---
-
-
-
-
 Welcome to MPE Bouwtechniek, your trusted partner in construction services! With over 15 years of experience in the industry, we are a team of young entrepreneurs ready to embark on a journey of transforming and enhancing your home or office. As a family business with a strong presence in the Netherlands, we have built an impressive portfolio of successful projects.
 
 At MPE Bouwtechniek, we understand that your space is more than just bricks and mortar. It's a reflection of your vision, style, and functionality.
@@ -27,4 +32,3 @@ When you choose MPE Bouwtechniek, you are choosing a reliable partner who will w
 We take pride in our commitment to customer satisfaction and building long-lasting relationships with our clients. Your trust is our most valuable asset, and we will go above and beyond to earn it. Let us be the construction company that turns your dreams into reality.
 
 Contact us today and let's begin this exciting journey of remodeling or expanding your home or office with MPE Bouwtechniek bv.
-

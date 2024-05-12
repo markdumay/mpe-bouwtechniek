@@ -1,11 +1,6 @@
 [[main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[main]]
-  name = "About"
-  url = "/about/"
+  name = "Home"
+  pageRef = "/"
   weight = 10
 
 [[main]]
@@ -13,42 +8,101 @@ weight = 1
   pageRef = "/services/"
   weight = 20
 
-     [[main]]
-      parent = "Services"
-      name = "Renovations"
-      url = "/services/renovations/"
-      weight = 21
+  [[main]]
+    parent = "Services"
+    name = "Renovations"
+    pageRef = "/services/#renovations"
+    weight = 21
 
-     [[main]]
-      parent = "Services"
-      name = "Extensions"
-      url = "/services/extensions/"
-      weight = 22
+  [[main]]
+    parent = "Services"
+    name = "Extensions"
+    pageRef = "/services/#extensions"
+    weight = 22
+
+  [[main]]
+    parent = "Services"
+    name = "Bathroom Renovation"
+    pageRef = "/services/#bathroom"
+    weight = 23
+
+  [[main]]
+    parent = "Services"
+    name = "Kitchen Renovation"
+    pageRef = "/services/#kitchen"
+    weight = 24
+
+  [[main]]
+    parent = "Services"
+    name = "Electricity"
+    pageRef = "/services/#electricity"
+    weight = 25
+
+  [[main]]
+    parent = "Services"
+    name = "Flooring and underfloor heating"
+    pageRef = "/services/#flooring"
+    weight = 26
+
+  [[main]]
+    parent = "Services"
+    name = "Windows"
+    pageRef = "/services/#windows"
+    weight = 26
+
+[[main]]
+  name = "About"
+  url = "/about/"
+  weight = 30
 
 [[main]]
   name = "Projects"
   url = "/projects/"
-  weight = 30
+  weight = 40
 
 [[main]]
   name = "Contact"
   url = "/contact/"
-  weight = 40
+  weight = 50
 
-#[[social]]
-#  name = "LinkedIn"
-#  pre = "<i class=\"fab fa-linkedin fa-2x\"></i>"
-#  url = "https://linkedin.com/"
-#  weight = 10
-#
-#[[social]]
-#  name = "GitHub"
-#  pre = "<i class=\"fab fa-github fa-2x\"></i>"
-#  url = "https://github.com/"
-#  weight = 20
-#
-#[[social]]
-#  name = "Medium"
-#  pre = "<i class=\"fab fa-medium fa-2x\"></i>"
-#  url = "https://medium.com/"
-#  weight = 30
+[[social]]
+  name = "LinkedIn"
+  pre = "fab linkedin"
+  url = "https://linkedin.com/"
+  weight = 10
+
+[[social]]
+  name = "GitHub"
+  pre = "fab fa-github"
+  url = "https://github.com/"
+  weight = 20
+
+[[social]]
+  name = "Medium"
+  pre = "fab medium"
+  url = "https://medium.com/"
+  weight = 30
+
+# toml-docs-start sample-navigation
+[[sample]]
+  name = "Blog"
+  pageRef = "/blog/"
+  weight = 10
+
+[[sample]]
+  name = "Projects"
+  pageRef = "/projects/"
+  weight = 20
+
+[[sample]]
+  name = "Sample project"
+  pageRef = "/projects/sample-project/"
+  parent = "Projects"
+  weight = 1
+
+[[sample]]
+  name = "Another project"
+  pageRef = "/projects/another-project/"
+  parent = "Projects"
+  weight = 2
+# toml-docs-end sample-navigation
