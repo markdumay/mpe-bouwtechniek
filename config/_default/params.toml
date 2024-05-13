@@ -4,7 +4,7 @@
     titleSeparator = "-"
     titleAddition = "Welcome"
     description = ""
-    enableDarkMode = false
+    enableDarkMode = true
     modes = ["light", "dark"]
     canonifyAssetsURLs = false
     endorse = true
@@ -56,9 +56,9 @@
     offset = "5.5rem"
     search = true
     searchModal = true
-    breadcrumb = true
-    toc = true
-    sidebar = true
+    breadcrumb = false
+    toc = false
+    sidebar = false
     size = "md"
 
 [messages]
