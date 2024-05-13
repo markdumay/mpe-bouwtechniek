@@ -33,3 +33,9 @@
 {{/*        "align" $align)*/}}
 {{/*    -}}*/}}
 {{/*{{- end -}}*/}}
+
+
+
+{{- if or (eq $layout "featured") .IsHome -}}
+    {{- partial "assets/hero-slider.html" (dict) -}}
+{{- end -}}

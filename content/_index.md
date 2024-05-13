@@ -1,6 +1,6 @@
 ---
-title: Welkom bij MPE Bouwtechniek
-description: "Welkom"
+title: Welcome to MPE Bouwtechniek!
+description: "Welcome"
 thumbnail:
     url: /img/sunrise.jpg
     author: Harris Vo
@@ -8,14 +8,18 @@ thumbnail:
     origin: https://unsplash.com/photos/ZX6BPboJrYk
     originName: Unsplash
 ---
-Welkom bij MPE Bouwtechniek, uw vertrouwde partner in bouwdiensten! Met meer dan 15 jaar ervaring in de branche zijn we een team van jonge ondernemers die klaar staan om uw huis of kantoor te transformeren en te verbeteren. Als familiebedrijf met een sterke aanwezigheid in Nederland, hebben we een indrukwekkende portfolio opgebouwd van succesvolle projecten!
+Welcome to MPE Bouwtechniek, your trusted partner in construction services! With over 15 years of experience in the industry, 
+we are a team of young entrepreneurs ready to embark on a journey of transforming and enhancing your home or office. As a family business 
+with a strong presence in the Netherlands, we have built an impressive portfolio of successful projects! 
 
-Bij MPE Bouwtechniek begrijpen we dat uw ruimte meer is dan alleen maar bakstenen en mortel. Het is een weerspiegeling van uw visie, stijl en functionaliteit. Daarom zijn we toegewijd aan het leveren van uitzonderlijke resultaten die uw verwachtingen overtreffen. Onze doelgerichte aanpak zorgt ervoor dat elk project dat we ondernemen, op tijd, binnen budget en volgens de hoogste kwaliteitsnormen wordt voltooid.
+{{< image src="/img/index/image-001.jpg" ratio="1x1" class="rounded img-thumbnail float-end lana-right" >}}At MPE Bouwtechniek, we understand that your space is more than just bricks and mortar. It's a reflection of your vision, style, and functionality.
 
-Wat ons onderscheidt, is onze passie voor innovatie. We blijven voortdurend op de hoogte van de nieuwste trends, technieken en materialen in de bouwsector. Dit stelt ons in staat om ideeën en creatieve oplossingen aan te dragen, zodat uw project zich onderscheidt van de rest.
+That's why we are committed to delivering exceptional results that exceed your expectations. Our goal-oriented approach ensure that every project we undertake is completed on time, within bud and to the highest standards of quality.  What sets us apart is our passion for innovation.
 
-Vindingrijkheid is nog een kenmerk van ons bedrijf. We geloven in het maximaliseren van het potentieel van elk project, waarbij we onze expertise en uitgebreide netwerk van leveranciers en onderaannemers benutten om kosteneffectieve oplossingen te leveren zonder afbreuk te doen aan de kwaliteit. We begrijpen de waarde van uw investering en streven ernaar om de beste waarde voor uw geld te bieden.
+We constantly stay updated with the latest trends, techniques, a nd materials in the construction industry. This allows us to bring ideas and creative solutions to the table, ensuring that your proje stands out from the rest.
 
-Als u kiest voor MPE Bouwtechniek, kiest u voor een betrouwbare partner die nauw met u samenwerkt in elke fase van het proces. Van het eerste consult tot de laatste afwerking zal ons toegewijde team van professionals er zijn om naar uw behoeften te luisteren, deskundig advies te geven en uw visie tot leven te brengen. We zijn trots op onze toewijding aan klanttevredenheid en het opbouwen van langdurige relaties met onze klanten. Uw vertrouwen is ons kostbaarste bezit, en we zullen er alles aan doen om het te verdienen. Laat ons het bouwbedrijf zijn dat uw dromen waarmaakt.
+Resourcefulness is another hallmark of our company. We believe in maximising the potential of every project, utilising our expertise and extensive network of suppliers and subcontractors to deliver cost-effective solutions without compromising on quality. We understand the value of your investment and strive to provide the best value for your money.
 
-Neem vandaag nog contact met ons op en laten we samen aan dit spannende avontuur beginnen om uw huis of kantoor te renoveren of uit te breiden met MPE Bouwtechniek BV.
+When you choose MPE Bouwtechniek, you are choosing a reliable partner who will work closely with you every step of the way. From the initial consultation to the final touches, our dedicated team of professionals will be there to listen to your needs, offer expert advice, and bring your vision to life.  We take pride in our commitment to customer satisfaction and building long-lasting relationships with our clients. Your trust is our most valuable asset, and we will go above and beyond to earn it. Let us be the construction company that turns your dreams into reality.
+
+Contact us today and let's begin this exciting journey of remodeling or expanding your home or office with MPE Bouwtechniek bv.

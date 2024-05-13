@@ -50,7 +50,7 @@
 
 [navigation]
     anchor = true
-    logo = "/img/mpe-logo.svg"
+    logo = "/img/mpe-logo.png"
     color = "body"
     fixed = true
     offset = "5.5rem"
@@ -135,7 +135,7 @@
     themeOpacity = "10"
     darkModeShade = "20%"
     darkModeTint = "40%"
-    themeFont = "Inter"
+    themeFont = "Inter, Doppio One"
     # themeFontPath = "https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" # external path
     themeFontPath = "/fonts" # local path
     fontSizeBase = "1rem"
@@ -143,17 +143,17 @@
 
 [schema]
     type = "Organization"
-    name = "Hinode"
+    name = "MPE Bouwtechniek"
     locale = "en-US"
     # twitter = "https://twitter.com/gethinode"
     # linkedIn = ""
-    github = "https://github.com/gethinode/hinode"
+    #github = "https://github.com/gethinode/hinode"
     section = "blog"
     [author]
-        name = "Mark Dumay"
+        name = "MPE Bouwtechniek"
         # twitter = "https://twitter.com/markdumay"
-        linkedin = "https://www.linkedin.com/in/markdumay/"
-        github = "https://github.com/markdumay"
+        #linkedin = "https://www.linkedin.com/in/markdumay/"
+        #github = "https://github.com/markdumay"
     [logo]
         url = "img/logo512x512.png"
         width = 512
