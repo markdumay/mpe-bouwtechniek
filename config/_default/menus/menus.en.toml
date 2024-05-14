@@ -23,7 +23,7 @@
   [[main]]
     parent = "Services"
     name = "Bathroom Renovation"
-    pageRef = "/services/#bathroom"
+    pageRef = "/services/#bathroom-renovations"
     weight = 23
 
   [[main]]
