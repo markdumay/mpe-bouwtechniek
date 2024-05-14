@@ -17,6 +17,10 @@
     [main.build]
         transpiler = "libsass"
 
+[pages]
+    [pages.projects]
+        metadata = "none"
+
 [modules]
     core = ["bootstrap", "flexsearch", "fontawesome"]
     optional = ["leaflet", "katex", "lottie"]
@@ -45,14 +49,20 @@
 [home]
     # sections = ["posts"]
     fullCover = false
-    centerHeadline = false
+    centerHeadline = true
     style = ""
+    [home.feature]
+        orientation = "horizontal"
+        color = "primary"
+        width = 4
+        align = "center"
+
 
 [navigation]
     anchor = true
     logo = "/img/mpe-logo.png"
     color = "body"
-    fixed = true
+    fixed = false
     offset = "5.5rem"
     search = true
     searchModal = true
@@ -139,7 +149,7 @@
     # themeFontPath = "https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" # external path
     themeFontPath = "/fonts" # local path
     fontSizeBase = "1rem"
-    purge = false
+    purge = true
 
 [schema]
     type = "Organization"

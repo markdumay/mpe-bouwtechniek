@@ -1,5 +1,5 @@
-title = "Hinode"
-copyright = "Copyright © 2024 Mark Dumay."
+title = "Bouwtechniek"
+copyright = "Copyright © 2024 MPE Bouwtechniek."
 paginate = 9
 enableGitInfo = true
 
@@ -35,7 +35,7 @@ home = ["HTML", "RSS", "REDIR"]
 
 [build]
   writeStats = true
-  
+
 [taxonomies]
   tag = 'tags'
 
