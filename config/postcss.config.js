@@ -14,6 +14,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     ...whitelister([
       './assets/scss/theme/fonts.scss',
       './assets/scss/theme/theme.scss',
+      './assets/scss/theme/photoswipe.scss',
       './_vendor/github.com/gethinode/hinode/assets/scss/components/_clipboard.scss',
       './_vendor/github.com/gethinode/hinode/assets/scss/components/_command.scss',
       './_vendor/github.com/gethinode/hinode/assets/scss/components/_nav.scss',

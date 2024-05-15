@@ -37,7 +37,7 @@
         state = "defer"
 
 [debugging]
-    showJS = false
+    showJS = true
     showSCSS = false
     purgeHTMLComments = false
 
